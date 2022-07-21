@@ -42,3 +42,86 @@ video {
     background: rgb(211, 17, 17);
 }
 
+.photomy {
+  padding: 20px;
+  background-color: white;
+  margin: 40px;
+}
+
+.move_h {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.move_m {
+  width: 500px;
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 30s linear infinite;
+  margin: 20px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 9));
+  }
+}
+
+.move_i {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  position: 15px;
+  perspective: 250px
+}
+#imge {
+  width: 200px;
+  height: 400px;
+  transition: transform 1s;
+}
+
+#imge:hover {
+  transform: translateZ(20px);
+}
+.move_h::before, .move_h::after {
+  background: linear-gradient(to right, rgba(255, 255, 255,1) 0%, rgba(255,255,255,1) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.move_h::before {
+  left: 0;
+  top: 0;
+}
+.move_h::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.first {
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+ 
+  #imge {
+      height: 300px;
+    }
+}
+@media only screen and (max-width: 767px) {
+ 
+  #imge {
+      height: 300px;
+    }
+}
