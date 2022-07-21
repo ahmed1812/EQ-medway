@@ -1618,6 +1618,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 ================================================== */
 .facts-wrapper {
   text-align: center;
+  width: 100%;
 }
 
 .facts-wrapper .ts-facts {
@@ -1843,7 +1844,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .shuffle-btn-group {
   display: inline-block;
   margin: 20px 0 50px;
-  width: 100%;
   border-bottom: 3px solid #ffb600;
 }
 .shuffle-btn-group label {
