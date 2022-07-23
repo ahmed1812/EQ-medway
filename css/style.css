@@ -712,7 +712,6 @@ ul.navbar-nav > li.active > a {
 /*-- Logo --*/
 .logo img {
   width: auto;
-  height: 35px;
 }
 
 .header-two .logo img {
@@ -3467,4 +3466,49 @@ padding-bottom: 100px;
 #imge {
     height: 300px;
   }
+}
+
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background: #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.logv {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background: url(/images/logb.png);
+  background-size: cover;
+  /* border-radius: 50%; */
+  filter:  contrast(1.5);
+}
+
+.test {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.test  span{
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
 }
